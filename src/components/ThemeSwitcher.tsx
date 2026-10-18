@@ -21,7 +21,7 @@ export function ThemeSwitcher({
   const current = accent.toLowerCase();
 
   return (
-    <div className="theme-bar">
+    <div className="theme-bar shrink-0">
       <div className="theme-seg" role="group" aria-label="Tema">
         {THEME_ORDER.map((id) => (
           <button

@@ -21,15 +21,15 @@ export default function App() {
 
       <div className="relative z-10 mx-auto flex min-h-dvh w-full max-w-6xl flex-col gap-8 px-5 py-10 sm:px-8 sm:py-14">
         <header className="flex flex-col gap-4">
-          <div className="flex flex-wrap items-start justify-between gap-4">
-            <div className="flex flex-col gap-3">
+          <div className="flex flex-wrap items-start justify-between gap-4 sm:flex-nowrap">
+            <div className="flex min-w-0 flex-col gap-3">
               <div className="flex flex-wrap gap-2">
                 <span className="pill pill-accent">
                   prueba del modelo DeepSeek V4.1
                 </span>
                 <span className="pill">React 19 · Tailwind v4 · dnd-kit</span>
               </div>
-              <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+              <h1 className="text-[clamp(2.1rem,4.2vw,3rem)] font-semibold tracking-tight">
                 Liquid Glass <span className="shine-text">Lab</span>
               </h1>
             </div>
