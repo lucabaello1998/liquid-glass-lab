@@ -1,6 +1,8 @@
 # Liquid Glass Lab 🫧
 
-Contador + lista drag & drop con estética **liquid glass** estilo Apple (iOS 26 / macOS 26): blur real de fondo, refracción SVG que curva la luz en los bordes y reflejo especular que sigue al puntero.
+> 🧪 **Prueba de modelo**: este proyecto fue creado como prueba del modelo **DeepSeek V4.1 Flash Free** corriendo en OpenCode — diseño, estética liquid glass, código y testing de browser generados en una sola sesión.
+
+Contador + lista drag & drop con estética **liquid glass** estilo Apple (iOS 26 / macOS 26): blur real de fondo, refracción SVG que curva la luz en los bordes y reflejo especular que sigue al puntero. Con **4 modos de tema**: Normal, Oscuro, Claro y Color.
 
 ## Stack
 
@@ -34,6 +36,11 @@ El mapa se regenera (debounced) cuando cambia el tamaño del panel, y el radio d
 
 ## Qué incluye la app
 
+- **Temas** (`src/lib/theme.ts` + `src/components/ThemeSwitcher.tsx`): 4 modos conmutables desde el header —
+  - **Normal**: la aurora oscura original (indigo/cyan/fucsia)
+  - **Oscuro**: variante sobria, monocromo azul acero
+  - **Claro**: modo claro con vidrio frosted y aurora pastel
+  - **Color**: elegís un acento (swatches preset o picker libre) y **toda la paleta se armoniza** alrededor: fondo teñido + análogos y complementario para la aurora (matiz base, ±38°, complementario suave). Todo vive en CSS custom properties, persistido en `localStorage` y aplicado pre-paint con `useLayoutEffect` + un script inline anti-flash.
 - **Contador** (`src/components/Counter.tsx`): pasos 1/5/10/25, press-and-hold para repetir (+/−), reset, animación direccional del número (sube desde abajo / baja desde arriba), persistencia en `localStorage`.
 - **Lista ordenable** (`src/components/SortableBoard.tsx`): drag desde el handle, `DragOverlay` con lift & rotate, restricción vertical, agregar/borrar ideas y orden persistido. También se puede reordenar con teclado (Tab → Espacio → flechas → Espacio).
 - **Aurora background**: blobs animados + grilla + noise sutil para que el vidrio tenga qué refractar.
