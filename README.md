@@ -45,3 +45,7 @@ El mapa se regenera (debounced) cuando cambia el tamaño del panel, y el radio d
 - **Lista ordenable** (`src/components/SortableBoard.tsx`): drag desde el handle, `DragOverlay` con lift & rotate, restricción vertical, agregar/borrar ideas y orden persistido. También se puede reordenar con teclado (Tab → Espacio → flechas → Espacio).
 - **Aurora background**: blobs animados + grilla + noise sutil para que el vidrio tenga qué refractar.
 - **Accesibilidad**: `aria-live` en el contador, labels en todos los botones, focus visible, y `prefers-reduced-motion` respetado.
+
+## Licencia
+
+MIT. Ver [LICENSE](LICENSE).
